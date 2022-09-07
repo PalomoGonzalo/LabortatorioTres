@@ -12,10 +12,82 @@
 </head>
 <body>
     <h1>Titulo Principal</h1>
+    <!--propiedad action method, si no se declara es el metodo get -->
+    <form action="pagina">
+        <!--for permite enlazar un lbl con un input text y le da foco-->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"  placeholder="ingrese nombre">
+        <br>
 
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="18" max="65" value ="34" placeholder="ingrese edad">
+        <br>
+
+        <label for="clave">Contraseña:</label>
+        <input type="password" id="clave" name="paswword" placeholder="ingrese una contraseña">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required autocomplete="off" placeholder="ingrese email">
+        <br>
+        <br>
+        <fieldset>
+            <legend>Genero</legend> <!--aparece dentro del fieldset-->
+            <input type="radio" name="genero" value="masculino">Masculino<!--para que sea mutuamente excluyente tiene que ser del mismo name-->
+            <input type="checkbox" name="deporte" value="futbol">Futbol<!--para que sea mutuamente excluyente tiene que ser del mismo name-->
+            <input type="checkbox" name="deporte" value="Tenis" checked>Tenis<!--para ser checkeado por default-->
+        </fieldset>
+
+        <br>
+        <textarea title="Comentarios" name="" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="file">
+
+        <input type="range">
+
+        <select name="" id="">
+            <option value="pizza">Pizza</option>
+            <option value="sopa">Sopa</option>
+            <option value="sushi">Sushi</option>
+            <option value="asado">Asadado</option>
+           
+        </select>
+
+
+        <br>
+
+        <!--abandonamos de la pagina que estamos, envia una patecion al servidor, y el servidor vuelve a enviar un html-->
+       <!--<input type="submit" value="Enviar">--> 
+        <input type="button" value="Buton">
+        <input type="reset" value="Limpiar">
+        <button>Clickeame</button> <!--funciona como submit-->
+
+    </form>
+
+    <blockquote>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iure, atque quidem deleniti veritatis, quae veniam fugiat porro provident quo velit fuga assumenda itaque, iste similique odit rerum ad aperiam.
+
+    </blockquote> <!---deja la sangria como default-->
+
+    <cite>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptatibus adipisci perspiciatis, sapiente debitis minus excepturi inventore unde nesciunt nostrum cum ullam. Impedit veritatis delectus nulla ipsa, ratione similique quo!
+    </cite> <!--cita -->
+    <br>
+
+    <p>Esto quiero que &nbsp; &nbsp; &nbsp; &copy; se venia
+        tal cual 
+        en la 
+        pagina
+    </p>
+
+
+
+
+
+    <a href="#fin">Ir al final</a>
 
     <!-- target para que abra en un link, rel= no permite guardar historial en el google con la api del chrome-->
-    <a href="https://www.google.com/" target="_blank" rel="noopener norreferer">Google</a>
+    <!-- no follow, no estamos nostros detras de esto-->
+    <a href="https://www.google.com/" target="_blank" rel="noopener norreferer nofollow"><img src="./images/16508822676282.jpg" width="800" height="400" ></a>
     <br>
     <img src="http://placeimg.com/400/600/tech" alt="foto de tecnologia">
 
@@ -62,7 +134,9 @@
                 <td>Laboratorio III</td>
                 <td>Organizacion</td>
                 <td>Empresa</td>
-                <td>Investigacion</td>
+                <td>
+                    <a href="./pagina2.html#cap25">capitulo 25</a>
+                </td>
             </tr>
            
         </tbody>
@@ -72,11 +146,15 @@
     <h2 class="azul">Titulo Secundario</h2>
     <h3>Titulo Terciario</h3>
     <p class="azul">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus obcaecati tempora incidunt,<b>esto es una etiqueta b</b> voluptate nesciunt vel laudantium quis temporibus. Assumenda quisquam quasi minus? Reprehenderit officia nam nisi nostrum itaque. Recusandae, mollitia laborum velit, voluptas nesciunt consequuntur aliquid rem culpa voluptatem quae, sint quos veniam? Libero similique nobis porro id sit ipsa at officiis iste debitis in nostrum voluptatem aut aperiam itaque quae provident, veniam inventore neque dignissimos! Asperiores, nam voluptatem similique quaerat nihil quas ullam eveniet temporibus tempora beatae omnis impedit at enim. Quasi blanditiis itaque molestiae iure, sunt officiis saepe adipisci ea dignissimos molestias assumenda incidunt suscipit amet excepturi ex.</p>
-    <button id="btnSaludar">Click me</button>
+
+    <div id="contenedor">
+        <button id="btnSaludar">Click me</button>
+    </div>
+    
     <div style="background-color:grey;">
         <p>Lorem ipsum dolor sit amet consectetur <span style="color:red ;">Esto es un span</span> adipisicing elit. Deleniti nihil laboriosam cum illo vitae aliquid, ipsam quasi aut architecto velit eveniet, temporibus fugiat dolores impedit labore eaque unde tempora provident. Magni vitae, eos soluta in nobis tenetur minus? Recusandae voluptas sequi sunt est quis velit delectus veniam, doloremque pariatur. Voluptates perspiciatis praesentium sapiente voluptatibus perferendis odio possimus dignissimos nesciunt iure facere dolor sed, distinctio numquam odit accusantium rerum sit totam, temporibus hic ducimus! At, quasi? Odio non voluptate ab ex reiciendis itaque molestias vel? Illo consequatur, asperiores aliquam ipsam cum explicabo molestiae obcaecati quas sunt, incidunt voluptatibus! Expedita, beatae delectus!</p>
     </div>
 
-
+    <h2 id="fin">Final de la pagina</h2>
 </body>
 </html>
