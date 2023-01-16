@@ -5,7 +5,7 @@ html {
 body {
     font-size: 16px;
     /** 1REM = 10PX **/
-    
+    background-color: #fbe3e3;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -14,19 +14,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid #1e0211;
-    background-image: linear-gradient(35deg, #F5D5E0, #E3BED2) no-repeat center center;
-    background: -webkit-linear-gradient(90deg, #F5D5E0 10%, #E3BED2 90%);
-    background: -moz-linear-gradient(90deg, #F5D5E0 10%, #E3BED2 90%);
-    background: -ms-linear-gradient(90deg, #F5D5E0 10%, #E3BED2 90%);
-    background: -o-linear-gradient(90deg, #F5D5E0 10%, #E3BED2 90%);
-    background: linear-gradient(90deg, #F5D5E0 10%, #E3BED2 90%);
+    border-bottom: 2px solid #f9dfdf;
+    background-color: #f9d6d5;
+
 }
 
 
 h1 {
     align-self: flex-start;
-    color: rgb(248, 236, 236);
+    color:#C93384;
     text-align: center;
 }
 
@@ -43,7 +39,7 @@ h1 {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #C93384;
     font-size: 2.1rem;
     padding: 1rem;
     transition: all .2s;
